@@ -31,7 +31,7 @@ num_classes = 10
 y_train = keras.utils.to_categorical(y_train, num_classes)
 y_test = keras.utils.to_categorical(y_test, num_classes)
 
-# creating basic the model 
+# creating the basic model 
 model = Sequential([
     Dense(32, input_shape=(784,)),
     Activation('relu'),
@@ -119,7 +119,7 @@ neurons = grid_result.best_params_['neurons']
 dropout_rate = grid_result.best_params_['dropout_rate']
 
 
-# creating basic the model using best params
+# creating the basic model using best params
 model = Sequential([
     Dense(neurons, input_shape=(784,)),
     Activation('relu'),
